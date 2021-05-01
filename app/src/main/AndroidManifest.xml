@@ -16,6 +16,8 @@
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
+        <activity android:name=".Moeda"></activity>
+        <activity android:name=".Temperatura"></activity>
     </application>
 
 </manifest>
