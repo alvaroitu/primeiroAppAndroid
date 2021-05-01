@@ -19,9 +19,9 @@
 #### [LinkedIn](https://www.linkedin.com/in/alvaro-augusto-pereira)
 
 ### Página Pessoal
-#### - [Álvaro Itu Page](https://alvaroitu.github.io/)
+### - [Álvaro Itu Page](https://alvaroitu.github.io/)
 
-### Contato - contato@alvaroitu.com
+### E-mail de Contato - contato@alvaroitu.com
 
 
 
