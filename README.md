@@ -16,7 +16,7 @@
 #### - Delogic
 #### - Prospectors
 
-#### [LinkedIn] (https://www.linkedin.com/in/alvaro-augusto-pereira)
+#### [LinkedIn](https://www.linkedin.com/in/alvaro-augusto-pereira)
 
 ### Página Pessoal
 #### - [Álvaro Itu Page](https://alvaroitu.github.io/)
