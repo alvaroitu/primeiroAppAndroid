@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Trabalho A2</string>
+
+    <string name="saudacao">BEM VINDO !!!</string>
+    <string name="temperatura">Temperatura</string>
+    <string name="moeda">Moeda</string>
+</resources>
