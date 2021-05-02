@@ -4,6 +4,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
+import android.widget.Toast;
 import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 
@@ -37,16 +38,24 @@ public class Temperatura extends AppCompatActivity {
         btnCalcCelsiusToFareheint.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                double fareheintCalc = (Double.parseDouble(celsiusEntrada.getEditableText().toString()) * 1.8 ) + 32 ;
-                fareheintSaida.setText(df.format(fareheintCalc)+"°F");
+                try {
+                    double fareheintCalc = (Double.parseDouble(celsiusEntrada.getEditableText().toString()) * 1.8 ) + 32 ;
+                    fareheintSaida.setText(df.format(fareheintCalc)+"°F");
+                } catch (Exception e){
+                Toast.makeText(Temperatura.this, "entre com valores...", Toast.LENGTH_SHORT).show();
+                }
             }
         });
 
         btnCalcFareheintToCelsius.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                double celsiusCalc = (Double.parseDouble(fareheintEntrada.getEditableText().toString()) - 32 ) / 1.8 ;
-                celsiusSaida.setText(df.format(celsiusCalc)+"°C");
+                try {
+                    double celsiusCalc = (Double.parseDouble(fareheintEntrada.getEditableText().toString()) - 32) / 1.8;
+                    celsiusSaida.setText(df.format(celsiusCalc) + "°C");
+                } catch (Exception e){
+                Toast.makeText(Temperatura.this, "entre com valores...", Toast.LENGTH_SHORT).show();
+                }
             }
         });
 

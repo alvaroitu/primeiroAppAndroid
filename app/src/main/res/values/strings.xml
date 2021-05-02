@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Trabalho A2</string>
+    <string name="app_name">Trabalho A2 - Álvaro Itu</string>
     <!--Tela Inicial-->
     <string name="saudacao">BEM VINDO !!!</string>
     <string name="temperatura">Temperatura</string>
