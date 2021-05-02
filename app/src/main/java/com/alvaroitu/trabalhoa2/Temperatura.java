@@ -38,9 +38,7 @@ public class Temperatura extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 double fareheintCalc = (Double.parseDouble(celsiusEntrada.getEditableText().toString()) * 1.8 ) + 32 ;
-                fareheintSaida.setText(df.format(fareheintCalc));
-
-
+                fareheintSaida.setText(df.format(fareheintCalc)+"°F");
             }
         });
 
@@ -48,7 +46,7 @@ public class Temperatura extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 double celsiusCalc = (Double.parseDouble(fareheintEntrada.getEditableText().toString()) - 32 ) / 1.8 ;
-                celsiusSaida.setText(df.format(celsiusCalc));
+                celsiusSaida.setText(df.format(celsiusCalc)+"°C");
             }
         });
 
@@ -57,8 +55,8 @@ public class Temperatura extends AppCompatActivity {
             public void onClick(View v) {
                 celsiusEntrada.setText("");
                 fareheintEntrada.setText("");
-                celsiusSaida.setText("");
-                fareheintSaida.setText("");
+                celsiusSaida.setText(R.string.valorInicialTempC);
+                fareheintSaida.setText(R.string.valorInicialTempF);
             }
         });
 

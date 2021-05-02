@@ -1,15 +1,31 @@
 <resources>
     <string name="app_name">Trabalho A2</string>
-
+    <!--Tela Inicial-->
     <string name="saudacao">BEM VINDO !!!</string>
     <string name="temperatura">Temperatura</string>
     <string name="moeda">Moeda</string>
 
+    <!--Tela Temperatura-->
     <string name="convTemp">Conversão Temperatura:</string>
+    <string name="textoCelsius">Valor Em Celsius</string>
+    <string name="textoFareheint">Valor Em Fareheint</string>
+    <string name="textoConvCF">Convertido"\n"em"\n"Fareheint</string>
+    <string name="textoConvFC">Convertido"\n"em"\n"Celsius</string>
+    <string name="celsius">Celsius"\n"°C</string>
+    <string name="fareheint">Fareheint"\n"°F</string>
+
+    <!--Tela Moeda-->
+    <string name="convMoedas">Conversão de Moedas:</string>
+    <string name="messageReais">Entre com valores em Reais (R$)</string>
+    <string name="valorEntrada">Valor para Conversão</string>
+    <string name="pesosMex">Pesos Mexicanos</string>
+    <string name="dolares">Dólares Americanos</string>
+    <string name="ienes">Ienes do Japão</string>
+    <string name="solsPeru">Sols do Peru</string>
+    <!--Padrão-->
     <string name="calcular">Calcular</string>
     <string name="limpar">Limpar</string>
-    <string name="valorInicial">0</string>
-
-    <string name="convMoedas">Conversão de Moedas:</string>
-
+    <string name="valorInicial">$ 0.00</string>
+    <string name="valorInicialTempC"> 0.00°C</string>
+    <string name="valorInicialTempF"> 0.00°F</string>
 </resources>

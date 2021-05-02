@@ -5,11 +5,167 @@
         xmlns:app="http://schemas.android.com/apk/res-auto"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:background="@color/colorPrimary"
         tools:context=".Moeda">
 
     <TextView
+            android:id="@+id/cabecalhoMoeda"
             android:text="@string/convMoedas"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:layout_editor_absoluteY="256dp"
+            android:layout_margin="16dp"
+            android:padding="8dp"
+            android:gravity="center"
+            android:textSize="16sp"
+            android:textColor="@color/colorTexto"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintHorizontal_bias="0.501"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="76dp"/>
+    <EditText
+            android:id="@+id/valorEntrada"
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:gravity="center"
+            android:textSize="16sp"
+            android:textColor="@color/colorTexto"
+            android:textStyle="bold"
+            android:inputType="numberDecimal"
+            android:hint="@string/valorEntrada"
+            android:ems="10"
+            app:layout_constraintTop_toBottomOf="@+id/textoReais" app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintHorizontal_bias="0.5" app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="16dp"/>
+    <RadioGroup
+            android:id="@+id/radioGroup"
+            android:textColor="@color/colorTextoBlack"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content" android:id="@+id/textView3" tools:layout_editor_absoluteY="331dp"
-            tools:layout_editor_absoluteX="156dp"/>
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@+id/valorEntrada" app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="16dp" android:layout_marginLeft="8dp" android:layout_marginStart="8dp">
+
+        <RadioButton
+                android:id="@+id/rbPesosMex"
+                android:text="@string/pesosMex"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:gravity="center"
+                android:textSize="16sp"
+                android:textColor="@color/colorTexto"
+                android:textStyle="bold"
+                tools:layout_editor_absoluteY="346dp"
+                tools:layout_editor_absoluteX="102dp"/>
+        <RadioButton
+                android:id="@+id/rbDolares"
+                android:text="@string/dolares"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:gravity="center"
+                android:textSize="16sp"
+                android:textColor="@color/colorTexto"
+                android:textStyle="bold"
+                tools:layout_editor_absoluteY="518dp"
+                tools:layout_editor_absoluteX="102dp"/>
+        <RadioButton
+                android:id="@+id/rbIenes"
+                android:text="@string/ienes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:gravity="center"
+                android:textSize="16sp"
+                android:textColor="@color/colorTexto"
+                android:textStyle="bold"
+                tools:layout_editor_absoluteY="461dp"
+                tools:layout_editor_absoluteX="102dp"/>
+        <RadioButton
+                android:id="@+id/rbSolsPeru"
+                android:text="@string/solsPeru"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:gravity="center"
+                android:textSize="16sp"
+                android:textColor="@color/colorTexto"
+                android:textStyle="bold"
+                tools:layout_editor_absoluteY="405dp"
+                tools:layout_editor_absoluteX="92dp"/>
+    </RadioGroup>
+    <TextView
+            android:id="@+id/tvPesosMex"
+            android:text="@string/valorInicial"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:gravity="center"
+            android:textSize="16sp"
+            android:textColor="@color/colorTexto"
+            android:textStyle="bold"
+            app:layout_constraintTop_toBottomOf="@+id/valorEntrada" app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="16dp" android:layout_marginRight="8dp" android:layout_marginEnd="8dp"/>
+    <TextView
+            android:id="@+id/tvDolares"
+            android:text="@string/valorInicial"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:gravity="center"
+            android:textSize="16sp"
+            android:textColor="@color/colorTexto"
+            android:textStyle="bold"
+            app:layout_constraintTop_toBottomOf="@+id/tvPesosMex" app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginRight="8dp" android:layout_marginEnd="8dp"/>
+    <TextView
+            android:id="@+id/tvIenes"
+            android:text="@string/valorInicial"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:gravity="center"
+            android:textSize="16sp"
+            android:textColor="@color/colorTexto"
+            android:textStyle="bold"
+            app:layout_constraintTop_toBottomOf="@+id/tvDolares" app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginRight="8dp" android:layout_marginEnd="8dp"/>
+    <TextView
+            android:id="@+id/tvSolsPeru"
+            android:text="@string/valorInicial"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:gravity="center"
+            android:textSize="16sp"
+            android:textColor="@color/colorTexto"
+            android:textStyle="bold"
+            app:layout_constraintTop_toBottomOf="@+id/tvIenes" app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginRight="8dp" android:layout_marginEnd="8dp"/>
+    <Button
+            android:id="@+id/clearMoeda"
+            android:text="@string/limpar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginBottom="60dp"/>
+    <TextView
+            android:id="@+id/textoReais"
+            android:text="@string/messageReais"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:gravity="center"
+            android:textSize="16sp"
+            android:textColor="@color/colorTexto"
+            android:textStyle="bold"
+
+            app:layout_constraintTop_toBottomOf="@+id/cabecalhoMoeda" app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintHorizontal_bias="0.5" app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="16dp"/>
 </androidx.constraintlayout.widget.ConstraintLayout>
