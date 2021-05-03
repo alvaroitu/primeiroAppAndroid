@@ -7,6 +7,10 @@
 ##### Trabalho contém 2 exercícios: 1 - Converter Fahereint para Celsius & 2 - Conversão de moedas
 ##### OBS.: Optei por fazer os dois no mesmo aplicativo, assim eu pude treinar a mudança de páginas
 
+![](/imagens/1_appTelaPrincipal.PNG)
+![](/imagens/1_appTelaPrincipal.PNG)
+![](/imagens/1_appTelaPrincipal.PNG)
+
 ### Formação: Cursando
 #### Ciência da Computação (7° Semestre)
 
