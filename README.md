@@ -8,8 +8,8 @@
 ##### OBS.: Optei por fazer os dois no mesmo aplicativo, assim eu pude treinar a mudança de páginas
 
 <img src="https://github.com/alvaroitu/primeiroAppAndroid/blob/master/imagens/1_appTelaPrincipal.PNG" width="100">
-<img src="https://github.com/alvaroitu/primeiroAppAndroid/blob/master/imagens/1_appTelaTemperatura.PNG" width="100">
-<img src="https://github.com/alvaroitu/primeiroAppAndroid/blob/master/imagens/1_appTelaMoeda.PNG" width="100">
+<img src="https://github.com/alvaroitu/primeiroAppAndroid/blob/master/imagens/2_appTelaTemperatura.PNG" width="100">
+<img src="https://github.com/alvaroitu/primeiroAppAndroid/blob/master/imagens/3_appTelaMoeda.PNG" width="100">
 
 
 ### Formação: Cursando
